@@ -24,7 +24,30 @@
                 <a href="#about-us-contact">kontakt</a>
                 <a href="#join-us">Dołącz do nas</a>
             </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-us">O nas</a></li>
+                <li><a href="#about-product">Zdjęcia</li>
+                <li><a href="#about-us-contact">Kontakt</a></li>
+                <li><a href="#join-us">Dołącz do nas</a></li>
+            </ul>
         </div>
+        <script>
+            var toggleButton = document.querySelector('.burger-icon');
+            var menu = document.querySelector('.menu');
+
+            toggleButton.addEventListener('click', function() {
+            menu.classList.toggle('open');
+            });
+
+            var menuItems = menu.querySelectorAll('li');
+
+            menuItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                menu.classList.remove('open');
+                });
+            });
+        </script>
     </nav>
     <header class="header">
         <div class="hero-bg"></div>
