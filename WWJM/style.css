@@ -114,7 +114,7 @@ nav.sticky {
 }
 
 .nav-items {
-	display: none;
+	display: block;
 }
 /* header */
 .header {
